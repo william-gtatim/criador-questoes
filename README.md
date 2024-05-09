@@ -1,6 +1,6 @@
-# Criador de Questões
+# Criador de Questões com Inteligência Artificial
 
-This template should help get you started developing with Vue 3 in Vite.
+Esse App usa inteligência artificial para auxiliar professores na elaboração de boas questões para avaliar estudantes
 
 ## Recommended IDE Setup
 
