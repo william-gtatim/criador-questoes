@@ -4,9 +4,7 @@ Esse App usa inteligência artificial para auxiliar professores na elaboração 
 * Ser uma ferramenta flexível que possibilite aos professores produzir diferetes tipos de questões, cobrindo habilidades variadas relacionadas a um conteúdo;
 * Gerar conteúdo de qualidade, que realmente atenda ao propósito de avaliar a aprendizagem dos estudantes;
 * Acelerar o processo de criação manual de questões, que consome várias horas de trabalho de professores.
-```sh
-npm install
-```
+
 ## Como Rodar o Projeto
 
 Siga estes passos para configurar e executar o projeto localmente:
@@ -24,7 +22,7 @@ Siga estes passos para configurar e executar o projeto localmente:
     ```sh
     VITE_GEMINI_API=sua_chave_api_aqui
     ```
-    Substitua sua_chave_api_aqui pela sua chave API real.
+    Substitua sua_chave_api_aqui pela sua chave API real. Embora seja uma string, não inclua aspas nesse contexto
 4. **Inicie o Projeto:**
     Para iniciar o servidor de desenvolvimento e testar o projeto, execute:
     ```sh
