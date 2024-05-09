@@ -39,8 +39,8 @@ const habilidadesFiltradas = computed(() => {
     </div>
 
     <Dialog v-model:visible="visible" modal header="Selecione o nível de habilidade da questão"
-        :style="{ width: '55rem' }">
-        <div class="mb-4 flex gap-3">
+        :style="{ width: '50vw' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }">
+        <div class="mb-4 flex gap-2 flex-wrap">
             <Chip label="Todas" class="cursor-pointer" @click="criterioTaxonomiaSelecionado = null" />
             <Chip label="Lembrar" class="cursor-pointer" @click="criterioTaxonomiaSelecionado = 'lembrar'" />
             <Chip label="Compreender" class="cursor-pointer" @click="criterioTaxonomiaSelecionado = 'compreender'" />
