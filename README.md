@@ -13,20 +13,21 @@ Esse App usa inteligência artificial para auxiliar professores na elaboração 
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Como rodar o projeto?
+Faça donwoload do projeto e rode 
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Crie um arquivo .env.local na pasta do projeto com sua API do Gemini. Substitua o "bbbb" pela sua API.
+
+```sh
+VITE_GEMINI_API=bbbbbbbb
+```
+
+Para testar, digite
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
