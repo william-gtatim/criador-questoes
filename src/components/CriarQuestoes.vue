@@ -12,7 +12,7 @@ const { nivelLeituraSelecionada } = storeToRefs(store);
 <template>
     <div class="grid h-full">
         <div class="col-12 md:col-5 p-4 ">
-            <div class="sticky top-0">
+            <div class="md:sticky md:top-0">
                 <CriarQuestoesOpcoes />
             </div>
         </div>
