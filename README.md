@@ -1,7 +1,6 @@
-# Criador de Questões com IA
+# prof-assistente
 
-Esse App usa Inteligência Artificial para auxiliar professor a criar boas questões para avaliar estudantes.
-
+This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
