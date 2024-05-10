@@ -4,7 +4,7 @@ Esse App usa inteligência artificial para auxiliar professores na elaboração 
 [https://criador-questoes.vercel.app/](https://criador-questoes.vercel.app/)
 ## Recursos disponíveis
 * Os prompts de geração de questões por trás dessa ferramenta foram desenvolvidos para produzir questões que atendem a uma série de padrões de qualidade. Em especial, visam evitar um problema recorrente em questões produzidas por Inteligência Artificial: a alternativa correta normalmente é a mais longa. 
-* Permite que o usuário tenha controle sobre o tipo de habilidade exigida do estudante em relação ao conteúdo. Essas habilidades estão associadas aos níveis de complexidade da taxonomia de Bloom. No momento, é possível criar questões que geram um contexto para o estudante aplicar seu conhecimento na resolução de um problema e questões mais básicas, que exigem apenas lembrar e identificar informações.
+* Permite que o usuário tenha controle sobre o tipo de habilidade exigida do estudante em relação ao conteúdo. Essas habilidades estão associadas aos níveis de complexidade da taxonomia de Bloom. No momento, é possível criar questões que geram um contexto ou cenário para o estudante aplicar seu conhecimento na resolução de um problema e questões mais básicas, que exigem apenas lembrar e identificar informações.
 * Permite que o usuário gere sugestões de subtópicos para um determinado tópico.
 
 ![Screenshot do app](https://raw.githubusercontent.com/william-gtatim/criador-questoes/main/src/assets/screenshot.png)
