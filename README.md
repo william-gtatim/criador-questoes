@@ -35,6 +35,6 @@ Siga estes passos para configurar e executar o projeto localmente:
     ```
 ## Bibliotecas utilizadas
 Para a criação da interface desse projeto foram usados as seguintes bibliotecas. Nos links você encontra a documentação de cada uma delas.
-*[Primevue](https://primevue.org/)
-*[Primeflex](https://primeflex.org/)
-*[Primeicons](https://primevue.org/icons/)
+* [Primevue](https://primevue.org/)
+* [Primeflex](https://primeflex.org/)
+* [Primeicons](https://primevue.org/icons/)
