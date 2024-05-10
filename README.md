@@ -7,6 +7,8 @@ Esse App usa inteligência artificial para auxiliar professores na elaboração 
 
 ## Referências do projeto
 [Writing Good Multiple Choice Test Questions](https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/)
+
+(![Screenshot do app](https://raw.githubusercontent.com/william-gtatim/criador-questoes/main/src/assets/screenshot.png))
 ## Como Rodar o Projeto
 
 Siga estes passos para configurar e executar o projeto localmente:
