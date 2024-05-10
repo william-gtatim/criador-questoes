@@ -1,11 +1,19 @@
 # Criador de Questões com Inteligência Artificial
-Esse App usa inteligência artificial para auxiliar professores na elaboração de questões de qualidade para avaliar estudantes. Os objetivos cenrtais desse recurso são:
+Esse App usa inteligência artificial para auxiliar professores na elaboração de questões de qualidade para avaliar estudantes.
+## Problema
+Elaborar questões para avaliar a aprendizagem dos estudantes é um processo trabalhoso. Isso envolve.... Os LLMs atuais facilitam bastante esse trabalho. É possível gerar centenas de questões em poucos minutos. No entanto, a qualidade das questões nem sempre é a desejada. Um problema recorrente das questões geradas por modelos de linguagem como o Gemini do Google e o gpt da Open IA é o fato de que a alternativa correta em geral é a altrnativa com mais caracteres. Uma falha simples 
+
+
+ Os objetivos centrais desse recurso são:
 * Ser uma ferramenta flexível que possibilite aos professores produzir diferetes tipos de questões, cobrindo habilidades variadas relacionadas a um conteúdo;
 * Gerar conteúdo de qualidade, que realmente atenda ao propósito de avaliar a aprendizagem dos estudantes;
 * Acelerar o processo de criação manual de questões, que consome várias horas de trabalho de professores.
 
 
-## Recursos 
+## Recursos disponíveis
+* Os prompts de geração de questões por trás dessa ferramenta foram desenvolvidos para produzir questões que atendem a uma série de padrões de qualidade. Em espcial, visam evitar um problema recorrente em questões produzidas por Inteligência Artificial: a alternativa correta normalmente é a mais longa. 
+* Permite que o usuário tenha controle sobre o tipo de habilidade exigida do estudante em relação ao conteúdo. Essas habilidade estão associadas aos níveis de complexidade da taxonomia de Bloom.
+
 ![Screenshot do app](https://raw.githubusercontent.com/william-gtatim/criador-questoes/main/src/assets/screenshot.png)
 
 ## Referências do projeto
