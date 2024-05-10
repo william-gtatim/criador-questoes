@@ -5,6 +5,8 @@ Esse App usa inteligência artificial para auxiliar professores na elaboração 
 * Gerar conteúdo de qualidade, que realmente atenda ao propósito de avaliar a aprendizagem dos estudantes;
 * Acelerar o processo de criação manual de questões, que consome várias horas de trabalho de professores.
 
+## Referências do projeto
+[Writing Good Multiple Choice Test Questions](https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/)
 ## Como Rodar o Projeto
 
 Siga estes passos para configurar e executar o projeto localmente:
