@@ -50,60 +50,13 @@ export const habilidadesQuestoes = [
 
         ],
         exemplos: [
-            {
-                'pergunta': 'Uma nova lei federal é aprovada, restringindo a liberdade de expressão na internet. Um grupo de cidadãos acredita que essa lei viola os direitos fundamentais garantidos pela Constituição. Qual poder é responsável por determinar se a lei é constitucional ou não, ao qual esses cidadãos poderiam recorrer?',
-                'A': 'O Poder Executivo, por ser responsável pela aplicação das leis.',
-                'B': 'O Poder Legislativo, por ser responsável pela criação das leis.',
-                'C':'O Poder Judiciário, por interpretar a lei e a Constituição.',
-                'D': 'A mídia, por exercer o papel de quarto poder na democracia.',
-                'gabarito': 'B',
-
-            },
-            {
-                'pergunta': 'Durante um surto de uma doença bacteriana, um hospital começou a usar um novo antibiótico. No entanto, após alguns meses, os médicos notaram um aumento nos casos de pacientes não respondendo ao tratamento. Qual das seguintes opções melhor explica essa situação sob a perspectiva da teoria da evolução?',
-                'A': 'As bactérias desenvolveram imunidade ao antibiótico devido à mudança de dieta dos pacientes, o que pode ter alterado a composição microbiana e a resposta ao tratamento.',
-                'B': 'As bactérias que por acaso tinham mutações que conferiam resistência ao antibiótico sobreviveram e se reproduziram, passando essas mutações para as gerações seguintes.',
-                'C': 'Os antibióticos causaram mutações nas bactérias, tornando-as resistentes. Este é um exemplo de mutação induzida por agentes químicos externos.',
-                'D': 'O uso contínuo do antibiótico fortaleceu o sistema imunológico das bactérias, permitindo que desenvolvessem mecanismos para neutralizar seus efeitos.',
-                'gabarito': 'B'
-            }
-
-        ]
-    },
-    
-
-  
-];
-
-
-export const habilidadesQuestoes2 = [
-    {
-        titulo: 'Considerar contexto de uso',
-        descricao: 'A questão apresenta um contexto realista e exige o estudante aplicar conhecimento',
-        prompt: 'Crie questões nas quais os estudantes tenham que aplicar esses conhecimentos em situações realistas. Para criar contextos de aplicação para as questões, pense em situações reais, fora do mundo escolar, nas quais os estudantes poderiam usar os conhecimentos para resolver um problema.',
-        status: false,
-        value: 1,
-        habilidade: 'aplicar',
-        parts: [
-            { text: "Você é um professor especialista em avaliação de aprendizagem. Você trabalha com a elaboração de questões de alta qualidade. Em sua prática, você obedece a alguns princípios. As questões tem sempre alternativas com tamanhos aproximados e os dados devem ser retornados em formato JSON válido." },
-            { text: "input: Crie uma questão sobre o conceito de conservação de energia na qual os estudantes tenham que aplicar conhecimentos em situações realistas." },
-            { text: "output: {\n  \"pergunta\": \"Mariana está andando de bicicleta e se aproxima de uma ladeira. Ela percebe que, para manter a mesma velocidade ao subir a ladeira, precisa aplicar uma força maior nos pedais. Considerando as forças atuantes na bicicleta durante a subida, qual das seguintes afirmações melhor explica por que Mariana precisa aplicar mais força?\",\n  \"A\": \"A força gravitacional aumenta ao subir a ladeira, exigindo mais força para vencer a gravidade adicional.\",\n  \"B\": \"O atrito entre a bicicleta e a estrada diminui, e é necessário aplicar mais força para manter a mesma velocidade.\",\n  \"C\": \"A resistência do ar aumenta com a altitude, exigindo mais força para manter a mesma velocidade.\",\n  \"D\": \"A energia cinética transforma-se em energia potencial, exigindo mais trabalho para manter a velocidade.\",\n  \"gabarito\": \"D\"\n}" },
-            { text: "input: Crie uma questão sobre os três poderes na qual os estudantes tenham que aplicar conhecimentos em situações realistas." },
-            { text: "output: {\n  \"pergunta\": \"Uma nova lei federal é aprovada, restringindo a liberdade de expressão na internet. Um grupo de cidadãos acredita que essa lei viola os direitos fundamentais garantidos pela Constituição. Qual poder é responsável por determinar se a lei é constitucional ou não, ao qual esses cidadãos poderiam recorrer?\",\n  \"A\": \"O Poder Executivo, por ser responsável pela aplicação das leis.\",\n  \"B\": \"O Poder Legislativo, por ser responsável pela criação das leis.\",\n  \"C\": \"O Poder Judiciário, por interpretar as leis e a Constituição.\",\n  \"D\": \"A mídia, por exercer o papel de quarto poder na democracia.\",\n  \"gabarito\": \"C\"\n}" },
-            { text: "input: Crie uma questão sobre o conceito de seleção natural  na qual os estudantes tenham que aplicar conhecimentos em situações realistas." },
-            { text: "output: {\n  \"pergunta\": \"Durante um surto de uma doença bacteriana, um hospital começou a usar um novo antibiótico. No entanto, após alguns meses, os médicos notaram um aumento nos casos de pacientes não respondendo ao tratamento. Qual das seguintes opções melhor explica essa situação sob a perspectiva da teoria da evolução?\",\n  \"A\": \"As bactérias desenvolveram imunidade ao antibiótico devido à mudança de dieta dos pacientes, o que pode ter alterado a composição microbiana e a resposta ao tratamento.\",\n  \"B\": \"As bactérias que por acaso tinham mutações que conferiam resistência ao antibiótico sobreviveram e se reproduziram, passando essas mutações para as gerações seguintes.\",\n  \"C\": \"Os antibióticos causaram mutações nas bactérias, tornando-as resistentes. Este é um exemplo de mutação induzida por agentes químicos externos.\",\n  \"D\": \"O uso contínuo do antibiótico fortaleceu o sistema imunológico das bactérias, permitindo que desenvolvessem mecanismos para neutralizar seus efeitos.\",\n  \"gabarito\": \"B\"\n}" },
-            { text: "input: Crie uma questão sobre políticas de combate à inflação na qual os estudantes tenham que aplicar conhecimentos em situações realistas." },
-            { text: "output: {\n  \"pergunta\": \"Devido ao rápido aumento dos gastos nacionais com defesa, espera-se que o País A experimente uma inflação de preços, a menos que medidas sejam tomadas para restringir o crescimento da demanda privada agregada. Especificamente, o governo está considerando (1) aumentar as alíquotas do imposto de renda pessoal ou (2) introduzir uma política monetária muito restritiva. Se o governo do País A deseja minimizar o efeito adverso de suas políticas anti-inflacionárias sobre o crescimento econômico, qual das seguintes políticas ele deve usar?\",\n  \"A\": \"A política monetária restritiva, porque restringe mais os gastos de consumo do que os investimentos.\",\n  \"B\": \"A política monetária restritiva, já que o aumento de impostos restringiria os gastos de consumo.\",\n  \"C\": \"O aumento do imposto de renda pessoal, pois restringe mais os gastos de consumo do que os investimentos.\",\n  \"D\": \"Tanto a política monetária restritiva quanto o aumento da alíquota do imposto de renda pessoal, pois ambos deprimem igualmente o investimento.\",\n  \"gabarito\": \"C\"\n}" },
-
-        ],
-        exemplos: [
-            {
-                'pergunta': 'Uma nova lei federal é aprovada, restringindo a liberdade de expressão na internet. Um grupo de cidadãos acredita que essa lei viola os direitos fundamentais garantidos pela Constituição. Qual poder é responsável por determinar se a lei é constitucional ou não, ao qual esses cidadãos poderiam recorrer?',
-                'A': 'O Poder Executivo, por ser responsável pela aplicação das leis.',
-                'B': 'O Poder Legislativo, por ser responsável pela criação das leis.',
-                'C': 'O Poder Judiciário, por interpretar a lei e a Constituição.',
-                'D': 'A mídia, por exercer o papel de quarto poder na democracia.',
-                'gabarito': 'B',
+            {   "texto":"",
+                "pergunta": "",
+                "A": "",
+                "B": "",
+                "C":"",
+                "D": "",
+                "gabarito": "B",
 
             },
             {
@@ -119,35 +72,31 @@ export const habilidadesQuestoes2 = [
     },
     {
         titulo: 'Criar um cenário',
-        descricao: 'A questão descreve um cenário realista e pede para o estudante resolver o problema',
+        descricao: 'A questão descreve um cenário e pede para o estudante resolver um problema que tenha relação com ele.',
         status: false,
         prompt: 'Crie questões para o estudante aplicar seu conhecimento. Crie um caso para o estudante analisar e identificar qual a decisão ou modo de pensar correto sobre ele a partir do que está estudando.',
-        value: 2,
-        habilidade: 'aplicar',
-        exemplos: [
-
-        ]
-    },
-    {
-        titulo: 'Lembrar informações e conceitos',
-        descricao: 'A questão exige que o estudante lembre de alguma informação que já aprendeu',
-        status: false,
-        prompt: 'Crie questões que exijam dos estudantes lembrarem informações ou conceitos que já aprenderam anteriormente. ',
         value: 3,
-        habilidade: 'lembrar',
-        exemplos: [
-            {
-                'pergunta': 'Qual das seguintes declarações reflete com precisão o princípio da divisão de poderes proposto por Montesquieu?',
-                'A': 'O poder deve ser concentrado em um único órgão governamental para garantir eficiência da administração pública.',
-                'B': 'Os poderes executivo, legislativo e judiciário devem ser independentes e atuar como freios e contrapesos.',
-                'C': 'O poder deve ser concentrado nas mãos da elite para garantir a estabilidade no governo e a paz da população.',
-                'D': 'O poder deve ser distribuído uniformemente entre os cidadãos para garantir uma democracia efetiva.',
-                'gabarito': 'B',
-
-            },
-
+        habilidade: 'aplicar',
+        parts: [
+            { text: "Você é um professor especialista em avaliação de aprendizagem. Você trabalha com a elaboração de questões de alta qualidade. Em sua prática, você obedece a alguns princípios. As questões tem sempre alternativas com tamanhos aproximados e os dados devem ser retornados em formato JSON válido." },
+            { text: "input: teoria da evolução" },
+            { text: "output: {\n  \"texto\": \"Na fictícia região do Vale do Silêncio, uma área industrializada próxima a um ecossistema de manguezais, pesquisadores notaram uma rápida mudança na população de uma espécie de peixe que tradicionalmente possui uma coloração prateada brilhante. Nos últimos 50 anos, desde o aumento da poluição na área, uma proporção crescente desses peixes desenvolveu uma coloração mais escura. Estudos genéticos indicam que os peixes de coloração escura têm maior taxa de sobrevivência e reprodução na água poluída.\",\n  \"pergunta\": \"Com base na teoria da evolução e nos conceitos de seleção natural, qual das seguintes afirmações melhor explica a mudança na coloração dos peixes no Vale do Silêncio?\",\n  \"A\": \"A mudança na coloração é uma adaptação que aumenta a camuflagem dos peixes em águas turvas, melhorando suas chances de escapar de predadores.\",\n  \"B\": \"Os peixes de coloração escura são mais resistentes aos poluentes químicos, o que resulta em uma maior taxa de sobrevivência e reprodução.\",\n  \"C\": \"A coloração escura é um traço mutante que surgiu aleatoriamente e não oferece vantagens específicas em termos de sobrevivência ou reprodução para os peixes.\",\n  \"D\": \"A mudança na coloração é devida à alimentação alterada que os peixes têm acesso em um ambiente poluído, afetando a pigmentação de sua pele.\",\n  \"gabarito\": \"B\"\n}" },
+            { text: "input: ética kantiana" },
+            { text: "output: {\n  \"texto\": \"João, um contador, descobre que seu chefe está manipulando os registros financeiros da empresa para ocultar perdas significativas. João está preocupado com as consequências de expor essa atividade, incluindo a possibilidade de perder seu emprego e prejudicar a reputação da empresa e inclusive outros funcionários, caso a empresa venha a falir.\",\n  \"pergunta\": \"Seguindo os princípios da ética kantiana, qual seria a ação moralmente correta para João?\",\n  \"A\": \"João deve manter o segredo, priorizando sua segurança no emprego e a reputação da empresa, pois isso beneficiaria a maioria.\",\n  \"B\": \"João deve denunciar a manipulação, pois agir de forma honesta é a única forma de tratar a humanidade como um fim em si.\",\n  \"C\": \"João deve confrontar seu chefe e sugerir maneiras de corrigir os registros sem expor a empresa, buscando um equilíbrio entre honestidade e lealdade à empresa.\",\n  \"D\": \"João deve ignorar a situação, pois não é sua responsabilidade gerenciar as ações de seu chefe, e interferir pode causar mais danos do que benefícios.\",\n  \"gabarito\": \"B\"\n}" },
+            { text: "input: juro simples" },
+            { text: "output: {\n  \"texto\": \"Marina recebeu uma herança de R$ 10.000 e decidiu investir esse dinheiro em uma conta de poupança que oferece uma taxa de juro simples de 5% ao ano. Ela planeja deixar o dinheiro investido por 3 anos antes de usar os fundos para fazer uma viagem.\",\n  \"pergunta\": \"Quanto dinheiro Marina terá ao final dos 3 anos, considerando que o investimento acumula juros simples?\",\n  \"A\": \"R$ 10.500\",\n  \"B\": \"R$ 11.500\",\n  \"C\": \"R$ 11.000\",\n  \"D\": \"R$ 11.250\",\n  \"gabarito\": \"B\"\n}" },
+            { text: "input: leis de mendel aplicadas à previsão de características de um filho de um casal" },
+            { text: "output: {\n  \"texto\": \"João tem olhos castanhos, que é um traço dominante, enquanto Maria tem olhos azuis, que é um traço recessivo. O gene para olhos castanhos é representado por B, e o gene para olhos azuis é representado por b. Os dois são heterozigotos, o que significa que possuem um gene dominante (B) e um gene recessivo (b).\",\n  \"pergunta\": \"Qual é a probabilidade de seu filho ter olhos azuis?\",\n  \"A\": \"0%\",\n  \"B\": \"25%\",\n  \"C\": \"50%\",\n  \"D\": \"75%\",\n  \"gabarito\": \"B\"\n}" },
         ]
-    },
+    }
+    
+
+  
+];
+
+
+export const habilidadesQuestoes2 = [
+    
     {
         titulo: 'Identificar o que ilustra um conceito',
         descricao: 'Apresenta uma teoria ou conceito e pede para o estudante identificar uma situação que a ilustra',

@@ -31,6 +31,9 @@ export const useCriarQuestoesStore = defineStore('criarQuestoes', () => {
         if (habilidadeQuestaoSelecionada.value === 1) {
             criarQuestoesLembrarIdentificar();
         }
+        if(habilidadeQuestaoSelecionada.value === 3){
+            criarQuestoesContextoUso();
+        }
 
 
     }
@@ -99,7 +102,41 @@ export const useCriarQuestoesStore = defineStore('criarQuestoes', () => {
 
         }
     }
+
+    async function criarQuestoesCriarCenario() {
+        if (subtopicosSelecionados.value.length === 0) {
+            btnCriarQuestaoLoading.value = true;
+            for (let i = 0; i < 10; i++) {
+                const parts = habilidadesQuestoes[habilidadeQuestaoSelecionada.value - 1].parts;
+                parts.push({ text: `input: ${topicoDigitado.value}` },
+                    { text: "output: " });
+
+                const resultado = await criarConteudo(generationConfig, parts);
+                if (resultado) {
+                    questoes.value.push(resultado);
+                }
+            }
+            btnCriarQuestaoLoading.value = false;
+        } else {
+            btnCriarQuestaoLoading.value = true;
+            const subtopicos = subtopicosSelecionados.value;
+            for (let i = 0; i < subtopicos.length; i++) {
+                const parts = habilidadesQuestoes[habilidadeQuestaoSelecionada.value - 1].parts;
+                const subtopico = subtopicos[i];
+                parts.push({ text: `input: ${topico} ${subtopico.texto}, ` },
+                    { text: "output: " });
+
+                const resultado = await criarConteudo(generationConfig, parts);
+                if (resultado) {
+                    questoes.value.push(resultado);
+                }
+            }
+            btnCriarQuestaoLoading.value = false;
+
+        }
+    }
     
+
 
 
     return { btnCriarQuestaoLoading, fonteDadosParaQuestao, topicoDigitado, subtopicosSugeridos, textoDigitado, tipoPerguntaSelecionada, dificuldadeSelecionada, nivelLeituraSelecionada, habilidadeQuestaoSelecionada, prompt, questoes, criarQuestoes }

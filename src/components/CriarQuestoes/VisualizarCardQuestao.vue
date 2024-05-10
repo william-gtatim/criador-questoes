@@ -35,7 +35,12 @@ const copiarQuestao = (index) => {
         <Card v-for="(questao, index) in questoes" :key="index">
             <template #title>Questão {{ index + 1 }}</template>
             <template #content>
-                {{ questao.pergunta }}
+                <div class="flex flex-column gap-4">
+                    <div>{{ questao.texto }}</div>
+                    <div>{{ questao.pergunta }}</div>
+
+                </div>
+
                 <div class="flex flex-column gap-4 mt-5">
                     <div class="flex flex-row gap-3 ">
                         <div class="font-semibold  border-round-md p-2 surface-200"
